@@ -13,8 +13,13 @@ const getNextPage = response => {
 
 
 /* TODO: config different environmetns */
+let API_ROOT
 
-const API_ROOT = 'http://127.0.0.1:4000/v1/'
+if(process.env.NODE_ENV === 'production') {
+  API_ROOT = 'http://7db7d774.ngrok.io/v1/'
+} else {
+  API_ROOT = 'http://127.0.0.1:4000/v1/'
+}
 
 // Fetches an API response and normalizes the result JSON according to schema.
 // This makes every API response have the same shape, regardless of how nested it was.

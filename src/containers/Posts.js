@@ -19,10 +19,6 @@ class Posts extends Component {
   render() {
     let { posts, isFetching } = this.props
 
-    // if (isFetching) {
-    //   return <h1><i>Loading...</i></h1>
-    // }
-
     return (
       <div id="posts">
         <PostsList items={posts} loadMorePosts={this.loadMorePosts} />
