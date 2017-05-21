@@ -12,16 +12,16 @@ class Posts extends Component {
 
   loadMorePosts = (event) => {
     const { nextPage, loadPosts } = this.props
-    loadPosts(2)
+    loadPosts(3)
     event.preventDefault()
   }
 
   render() {
     let { posts, isFetching } = this.props
 
-    if (isFetching) {
-      return <h1><i>Loading...</i></h1>
-    }
+    // if (isFetching) {
+    //   return <h1><i>Loading...</i></h1>
+    // }
 
     return (
       <div id="posts">
