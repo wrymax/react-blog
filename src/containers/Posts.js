@@ -3,6 +3,8 @@ import React, { Component } from 'react'
 import { connect } from 'react-redux'
 
 import PostsList from '../components/PostsList'
+import LoadMorePosts from '../components/LoadMorePosts'
+
 import { loadPosts } from '../actions'
 
 class Posts extends Component {
@@ -12,16 +14,18 @@ class Posts extends Component {
 
   loadMorePosts = (event) => {
     const { nextPage, loadPosts } = this.props
-    loadPosts(3)
+    console.log("-- Next Page: ", nextPage)
+    loadPosts(nextPage)
     event.preventDefault()
   }
 
   render() {
-    let { posts, isFetching } = this.props
+    let { posts, isFetching, nextPage } = this.props
 
     return (
       <div id="posts">
-        <PostsList items={posts} loadMorePosts={this.loadMorePosts} />
+        <PostsList items={posts} />
+        <LoadMorePosts loadMorePosts={this.loadMorePosts} nextPage={nextPage} />
       </div>
     )
   }

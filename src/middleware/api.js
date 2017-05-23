@@ -64,7 +64,7 @@ const postSchema = new schema.Entity('posts', {}, {
 // Schemas for Github API responses.
 export const Schemas = {
   POST: postSchema,
-  POST_ARRAY: [postSchema],
+  POST_ARRAY: {posts: [postSchema]}
 }
 
 // Action key that carries API call info interpreted by this Redux middleware.

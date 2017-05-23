@@ -16,9 +16,8 @@ export const postsReducer = (state = {
           ...state,
           posts: [...state.posts, ...Object.values(action.response.entities.posts)], 
           isFetching: false,
-          nextPage: action.response.nextPage
+          nextPage: action.response.result.nextPage
         }
-        console.log('-- new state: ', new_state)
         return new_state
       case ActionType.POSTS_FAILURE:
         return {
