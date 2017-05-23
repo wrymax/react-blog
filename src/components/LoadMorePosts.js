@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import { Button } from 'react-bootstrap';
 
 
 export default class LoadMorePosts extends Component {
@@ -8,15 +9,15 @@ export default class LoadMorePosts extends Component {
     var html
     if (nextPage) {
       html = (
-        <div>
-          <button onClick={loadMorePosts}>
+        <div className="text-center">
+          <Button onClick={loadMorePosts}>
             Load More Posts
-          </button>
+          </Button>
         </div>
       )
     } else {
       html = (
-        <div className="no-more">No More</div>
+        <div className="noMore">No More</div>
       )
     }
     

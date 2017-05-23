@@ -6,16 +6,12 @@ import TopNav from '../components/TopNav'
 import Footer from '../components/Footer'
 // import { browserHistory } from 'react-router'
 
+import styles from '../stylesheets/share.css'
+
 class App extends Component {
   static propTypes = {
-    // Injected by React Redux
-    // errorMessage: PropTypes.string,
-    // resetErrorMessage: PropTypes.func.isRequired,
-    // inputValue: PropTypes.string.isRequired,
-    // Injected by React Router
     children: PropTypes.node
   }
-
 
   render() {
     const { children } = this.props;
@@ -35,6 +31,5 @@ class App extends Component {
 
 const mapStateToProps = (state, ownProps) => ({
 })
-
 
 export default connect(mapStateToProps, {})(App)
