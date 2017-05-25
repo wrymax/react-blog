@@ -1,4 +1,12 @@
 {
-  "main.js": "static/js/main.c1a95429.js",
-  "main.js.map": "static/js/main.c1a95429.js.map"
+  "main.css": "static/css/main.fc5da6cc.css",
+  "main.css.map": "static/css/main.fc5da6cc.css.map",
+  "main.js": "static/js/main.fd7395c4.js",
+  "main.js.map": "static/js/main.fd7395c4.js.map",
+  "static/media/avatar.jpg": "static/media/avatar.71bb1f06.jpg",
+  "static/media/glyphicons-halflings-regular.eot": "static/media/glyphicons-halflings-regular.f4769f9b.eot",
+  "static/media/glyphicons-halflings-regular.svg": "static/media/glyphicons-halflings-regular.89889688.svg",
+  "static/media/glyphicons-halflings-regular.ttf": "static/media/glyphicons-halflings-regular.e18bbf61.ttf",
+  "static/media/glyphicons-halflings-regular.woff": "static/media/glyphicons-halflings-regular.fa277232.woff",
+  "static/media/glyphicons-halflings-regular.woff2": "static/media/glyphicons-halflings-regular.448c34a5.woff2"
 }

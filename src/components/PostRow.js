@@ -1,15 +1,17 @@
 import React, {Component} from 'react';
 
+import styles from '../stylesheets/posts.css'
+
 export default class PostRow extends Component {
   render() {
     let { post } = this.props
 
     return (
-      <div className='post-row' key={post.id}>
-        <h4>{post.title}</h4>
-        <div className="post-date">Created at {post.createdAt}</div>
-        <quote>{post.pitch}</quote>
-        <p className="post-content">
+      <div className="postRow" key={post.id}>
+        <h4 className="postTitle">{post.title}</h4>
+        <i className="postDate">Created at {post.createdAt}</i>
+        <div className="text-center">『 {post.pitch} 』</div>
+        <p className="postContent">
           {post.content}
         </p>
       </div>

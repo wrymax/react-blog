@@ -5,6 +5,11 @@ import { syncHistoryWithStore } from 'react-router-redux'
 import Root from './containers/Root'
 import configureStore from './store/configureStore'
 
+// import "./stylesheets/index.scss"
+
+import 'bootstrap/dist/css/bootstrap.css';
+import 'bootstrap/dist/css/bootstrap-theme.css';
+
 const store = configureStore()
 const history = syncHistoryWithStore(browserHistory, store)
 

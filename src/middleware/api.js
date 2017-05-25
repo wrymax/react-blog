@@ -16,7 +16,7 @@ const getNextPage = response => {
 let API_ROOT
 
 if(process.env.NODE_ENV === 'production') {
-  API_ROOT = 'http://7db7d774.ngrok.io/v1/'
+  API_ROOT = 'http://575095d6.ngrok.io/v1/'
 } else {
   API_ROOT = 'http://127.0.0.1:4000/v1/'
 }
@@ -64,7 +64,7 @@ const postSchema = new schema.Entity('posts', {}, {
 // Schemas for Github API responses.
 export const Schemas = {
   POST: postSchema,
-  POST_ARRAY: [postSchema],
+  POST_ARRAY: {posts: [postSchema]}
 }
 
 // Action key that carries API call info interpreted by this Redux middleware.

@@ -1,0 +1,29 @@
+.postRow {
+	margin: 20px auto;
+	h4 {
+		text-align: center;
+		font-size: 18px;
+	}
+	.postDate {
+		text-align: center;
+		color: #AAA;
+		font-size: 12px;
+		display: block;
+		margin-bottom: 10px;
+	}
+	.postContent {
+		font-size: 14px;
+		line-height: 26px;
+		color: #555;
+		margin-top: 10px;
+	}
+	.postTitle {
+		margin: 60px auto 8px auto;
+		font-size: 26px;
+	}
+	blockquote {
+		margin: 0 auto;
+		color: #777;
+		padding: 6px;
+	}
+}
