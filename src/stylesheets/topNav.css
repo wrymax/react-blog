@@ -1,0 +1,7 @@
+.topNav {
+  border-bottom: 1px solid #EEE;
+  padding: 8px 0; }
+  .topNav .avatar {
+    height: 80px;
+    border-radius: 100%;
+    display: inline-block; }

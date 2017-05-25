@@ -1,0 +1,23 @@
+body {
+  font-family: PingFang SC,Lantinghei SC,Helvetica Neue,Helvetica,Arial,Microsoft YaHei,\\5FAE\8F6F\96C5\9ED1,STHeitiSC-Light,simsun,\\5B8B\4F53,WenQuanYi Zen Hei,WenQuanYi Micro Hei,"sans-serif";
+  margin: 0;
+  min-height: 100%;
+  position: relative;
+  padding: 0; }
+
+.main-container {
+  width: 1000px;
+  margin: 0 auto; }
+
+.text-center {
+  text-align: center; }
+
+.noMore {
+  text-align: center;
+  margin: 30px auto;
+  font-size: 15px;
+  color: #888;
+  width: 150px;
+  padding: 14px 0;
+  border-top: 1px solid #EEE;
+  border-bottom: 1px solid #EEE; }
